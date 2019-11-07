@@ -2,7 +2,7 @@
 “==”比较的是针对两个String类型变量的引用，当两个String类型的变量指向同一个String对象（即同一个内存堆），则返回true。而equals()方法是对String对象封装的字符串内容进行比较，相同返回true。
 
 在用equals方法与其他值做比较的时候，有可能会导致抛出空指针异常。写一个小程序来举例说明：
-```Java
+```java
 public class StringEqual {
 public static void equal1(String i, String j) {
 try {
@@ -39,7 +39,7 @@ public static void main(String[] args) {
 运行程序可看到第一个方法抛出了java.lang.NullPointerException异常，而第二个方法没有。这是为什么呢？
 
 看下equals方法的源码就清楚了
-```Java
+```java
 public boolean equals(Object anObject) {
 if (this == anObject) {
 return true;
