@@ -4,7 +4,6 @@
 在用equals方法与其他值做比较的时候，有可能会导致抛出空指针异常。写一个小程序来举例说明：
 ```java
 public class StringEqual {
-
 public static void equal1(String i, String j) {
 try {
 if(i.equals(j)) {
