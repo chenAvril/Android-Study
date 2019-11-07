@@ -1,6 +1,5 @@
 在Java语言中字符串比较有两种方式：== 和equals()。
 “==”比较的是针对两个String类型变量的引用，当两个String类型的变量指向同一个String对象（即同一个内存堆），则返回true。而equals()方法是对String对象封装的字符串内容进行比较，相同返回true。
-
 在用equals方法与其他值做比较的时候，有可能会导致抛出空指针异常。写一个小程序来举例说明：
 ```java
 public class StringEqual {
@@ -37,7 +36,6 @@ public static void main(String[] args) {
 }
 ```
 运行程序可看到第一个方法抛出了java.lang.NullPointerException异常，而第二个方法没有。这是为什么呢？
-
 看下equals方法的源码就清楚了
 ```java
 public boolean equals(Object anObject) {
@@ -63,9 +61,4 @@ return false;
 }
 ```
 这里用 if (anObject instanceof String) 来判断传入的对象是否是String类型，如果不是直接返回false。
-
 因此在使用equals方法上，如果一个数值可能为空的对象实例，调用equals方法时，一定要遵循 “常量”.equals(变量) 或者 后输入的.equals(之前的)。这样就可以尽量避免空指针错误。
-
-```Java
-public static void main(String[] args){}
-```
