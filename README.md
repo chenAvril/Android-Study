@@ -10,4 +10,6 @@
 
 #第三方
 
-  
+  ```Java
+public static void main(String[] args){}
+```
