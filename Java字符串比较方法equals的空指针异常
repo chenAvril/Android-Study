@@ -66,3 +66,5 @@ return false;
 这里用 if (anObject instanceof String) 来判断传入的对象是否是String类型，如果不是直接返回false。
 
 因此在使用equals方法上，如果一个数值可能为空的对象实例，调用equals方法时，一定要遵循 “常量”.equals(变量) 或者 后输入的.equals(之前的)。这样就可以尽量避免空指针错误。
+
+
