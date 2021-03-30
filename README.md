@@ -1,6 +1,3 @@
-# [Intro.pdf](https://github.com/chenAvril/Android-Study/blob/master/%E7%A0%94%E5%8F%91%E9%83%A8%E5%8A%9E%E5%85%AC%E5%AE%A4%E5%8D%AB%E7%94%9F%E5%80%BC%E6%97%A5%E5%88%B6%E5%BA%A6.pdf).
-
-
 # Activity是什么？
 
 我们都知道android中有四大组件（Activity 活动，Service 服务，Content Provider 内容提供者，BroadcastReceiver 广播接收器），Activity是我们用的最多也是最基本的组件，因为应用的所有操作都与用户相关，Activity 提供窗口来和用户进行交互。
